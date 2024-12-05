@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Plantgard</string>
+    <string name="bottom_nav_menu">BottomNavigasionManu</string>
+    <string name="sudah_punya_akun_login">Sudah Punya Akun? Login</string>
+    <string name="selamat_datang_di">Selamat datang di</string>
+    <string name="plantgard">Plantgard</string>
+    <string name="plantgardlogo">plantgardlogo</string>
+    <string name="mode_gelap">Mode Gelap</string>
+    <string name="logout">logout</string>
+    <string name="keluar">Keluar</string>
+    <string name="buat_akun">Buat Akun</string>
+    <string name="nama">Nama</string>
+    <string name="register">REGISTER</string>
+    <string name="camera">camera</string>
+</resources>
