@@ -1,12 +1,12 @@
-package com.example.plantgard.ui.home
+    package com.example.plantgard.ui.home
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+    import androidx.lifecycle.LiveData
+    import androidx.lifecycle.MutableLiveData
+    import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
-    private val _text = MutableLiveData<String>().apply {
-        value = "Plantgard"
+    class HomeViewModel : ViewModel() {
+        private val _text = MutableLiveData<String>().apply {
+            value = "Plantgard"
+        }
+        val text: LiveData<String> = _text
     }
-    val text: LiveData<String> = _text
-}
