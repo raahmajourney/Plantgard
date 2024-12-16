@@ -18,8 +18,7 @@
             android:id="@+id/TitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hasil pindai"
-            android:textColor="@color/black"
+            android:text="@string/hasil_pindai"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,54 +26,54 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="30dp" />
 
-        <!-- CardView -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardviewImageView"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_margin="16dp"
-            android:layout_marginTop="12dp"
-            app:cardCornerRadius="30dp"
+        <TextView
+            android:id="@+id/tipetanaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/tipe_tanaman"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/TitleTextView">
-
-            <ImageView
-                android:id="@+id/previewImageView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:importantForAccessibility="no"
-                app:srcCompat="@drawable/outline_broken_image_24" />
-        </androidx.cardview.widget.CardView>
-
-        <!-- TextView Gejala -->
+            app:layout_constraintTop_toBottomOf="@id/TitleTextView" />
 
         <TextView
             android:id="@+id/gejala"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Gejala"
-            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:text="@string/gejala"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardviewImageView" />
+            app:layout_constraintTop_toBottomOf="@+id/tipetanaman" />
 
         <TextView
-            android:id="@+id/pilih_gambar"
+            android:id="@+id/deskripsi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Saran penanganan:"
-            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:text="@string/deskripsi"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gejala"
+            app:layout_constraintVertical_bias="0.027" />
+
+        <TextView
+            android:id="@+id/penanganan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/saran_penanganan"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/gejala" />
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
